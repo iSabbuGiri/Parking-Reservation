@@ -29,4 +29,4 @@ class Booking(models.Model):
         ordering = ['-booking_date', 'created_at']
 
     def __str__(self):
-        return self.name, self.booking_date
+        return self.name + ' ' + self.booking_date
