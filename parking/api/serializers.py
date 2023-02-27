@@ -1,13 +1,13 @@
-from rest_framework import serializers
+from rest_framework.serializers import ModelSerializer
 from ..models import *
 
-class CustomerSerializer(serializers.ModelSerializer):
+class CustomerSerializer(ModelSerializer):
     class Meta:
         model = Customer
         fields = '__all__'
 
 
-class BookingSerializer(serializers.ModelSerializer):
+class BookingSerializer(ModelSerializer):
     class Meta:
         model = Booking
         fields = '__all__'

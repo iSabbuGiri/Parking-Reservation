@@ -30,5 +30,5 @@ class Booking(models.Model):
 
     def __str__(self):
         return f"{self.name} {self.booking_date}"
-        # return '{} {}'.format(self.customer, self.booking_date)
+      
        
